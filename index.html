@@ -12,7 +12,6 @@
 <body>
 
 
-    <button  onclick="setData()">fecth </button>
     <div id="profile-main">
        <div class="flex items-center justify-center mb-5">
            <!-- <form method="GET"> -->
@@ -24,7 +23,8 @@
                     </svg>
                  <!-- </button> -->
                </span>
-               <input  class="py-2 text-sm text-white bg-gray-900 rounded-md pl-10 focus:outline-none focus:bg-white focus:text-gray-900" placeholder="Search..." onkeypress="check()">
+               <input type="text"  class="py-2 text-sm text-white bg-gray-900 rounded-md pl-10 focus:outline-none focus:bg-white focus:text-gray-900" id="git_input" placeholder="Search..." >
+                <button  onclick="setData()">fetch </button>
              </div>
            <!-- </form> -->
          </div>
