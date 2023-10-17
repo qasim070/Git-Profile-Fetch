@@ -23,11 +23,7 @@ const setData = () => {
 
     fetch(`https://api.github.com/users/${input}`)
         .then((response) => {
-            if (response.status === 404) {
-                return response.json().then((errorData) => {
-                    throw new Error(errorData.message); 
-                });
-            }
+                response.status === 404 ?  response.json().then((errorData) => {throw new Error(errorData.message) }) : [];
             return response.json();
         })
         .then((data) => {
